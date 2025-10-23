@@ -1,0 +1,34 @@
+# ===============================================
+# Name: CI Workflow
+# Purpose: Demonstrates a simple GitHub Actions CI pipeline
+# Author: Darnie Osh
+# ===============================================
+
+name: CI Pipeline
+
+# Triggers the workflow on push events to the main branch and manual triggers in the case of a teammate needing to run it.
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build & Test Job
+    runs-on: self-hosted
+
+    steps:
+      # Step 1: Checkout code from repository
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: Run a basic script
+      - name: Print a message
+        run: echo "Hello, world! Daniel CI pipeline is running successfully 🚀"
+
+      # Step 3: Simulate build/test commands
+      - name: Run multiple shell commands
+        run: |
+          echo "Simulating build..."
+          echo "Running tests..."
+          echo "✅ Build & test completed successfully."
