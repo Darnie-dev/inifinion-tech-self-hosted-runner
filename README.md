@@ -163,7 +163,7 @@ jobs:
 | `Repository not found` | Typo in repo URL | Verified repository exists and corrected URL with ```git remote set url``` |
 | Large file errors | GitHub max file size exceeded |Cleaned the Git history to remove the large files, and added   the ```actions-runner/ directory``` to .gitignore to ensure the repository remains strictly source-code focused (repository hygiene) |
 
-> _Screenshot Idea:_ Terminal showing resolved errors or LFS usage.
+
 
 ---
 
@@ -182,8 +182,6 @@ jobs:
 - Gained **hands-on experience** with workflow YAML, security considerations, and CI/CD pipeline setup.  
 - Learned how to **troubleshoot common Git and Actions errors**.  
 - Documented all challenges, solutions, and best practices to simulate production readiness.
-
-> _Screenshot Idea:_ Diagram showing runner workflow from GitHub to local execution.
 
 ---
 
