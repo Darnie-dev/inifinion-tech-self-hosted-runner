@@ -45,6 +45,7 @@ This project demonstrates my ability to:
      git init
      ```
    - Cloned repository if starting from GitHub:
+     
    <img width="1162" height="294" alt="git clone" src="https://github.com/user-attachments/assets/2c13b2fd-3f70-42b1-b142-3c14bc0d8c58" />
 
        ```bash
@@ -52,7 +53,8 @@ This project demonstrates my ability to:
        cd <repo>
        ```
 
-3. **Runner Configuration**  
+3. **Runner Configuration**
+
 <img width="1904" height="1080" alt="github commands" src="https://github.com/user-attachments/assets/12437c62-6ae2-4718-8d44-e714f34a9c95" />
 
    - on your repo, click on actions and then runners
@@ -64,6 +66,8 @@ This project demonstrates my ability to:
        mkdir actions-runner && cd actions-runner
        curl -o actions-runner-linux-x64-2.305.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.305.0/actions-runner-linux-x64-2.305.0.tar.gz
      ```
+
+     
    <img width="1136" height="160" alt="Screenshot 2025-10-23 030454" src="https://github.com/user-attachments/assets/a4fc9cf8-48a7-46ae-a2f7-66fd2e1afe1c" />
 
 
@@ -73,7 +77,7 @@ This project demonstrates my ability to:
       ./config.sh --url https://github.com/<username>/<repo> --token <TOKEN>
      ```
 
-4. ** Install and Start the Runner**  
+5. ** Install and Start the Runner**  
    - After configuring, you can start the runner with:
    ```bash
    ./run.sh
@@ -93,6 +97,7 @@ This project demonstrates my ability to:
 ## Workflow Configuration (CI)
 
 Example workflow file `ci.yml` or check mine here: 
+
 [darnie-test-run.yml workflow file](https://github.com/Darnie-dev/infinion-tech-self-hosted-runner/blob/main/.github/workflows/darnie-test-run.yml):
 
 ```yaml
@@ -124,6 +129,7 @@ jobs:
 - Push and pull request triggers are optional and commented out for security reasons.  
 
 - All steps are documented to demonstrate understanding of GitHub Actions.
+- 
 
 <img width="1261" height="736" alt="runner config confirmation" src="https://github.com/user-attachments/assets/d0b9807e-5f6c-45bc-a3db-d12dbd636cd5" />
 
@@ -153,7 +159,9 @@ jobs:
 ---
 
 ## Challenges Faced & Solutions
+
 <img width="717" height="169" alt="config root error" src="https://github.com/user-attachments/assets/badfe645-ba72-4ef0-a0ae-5006ce06c253" />
+
 
 | Challenge | Cause | Solution |
 |-----------|-------|---------|
@@ -191,4 +199,4 @@ jobs:
 - [Git LFS Documentation](https://git-lfs.github.com/)
 - [SSH Key Authentication](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 - [youtube](https://www.youtube.com/watch?v=aLHyPZO0Fy0)
-# inifinion-tech-self-hosted-runner
+
