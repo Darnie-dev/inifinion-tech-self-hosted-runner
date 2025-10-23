@@ -1,0 +1,8 @@
+actions-runner/
+externals/
+bin/
+_work/
+logs/
+*.tar.gz
+.env
+
